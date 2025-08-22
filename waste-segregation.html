@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Waste Segregation - Clean & Green Tech</title>
+    <meta name="description" content="Learn about proper waste segregation into wet, dry, hazardous, and other categories for effective treatment and disposal">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="waste-segregation.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="segregation-header">
+        <div class="container">
+            <h1>🗂️ Waste Segregation Guide</h1>
+            <p>Learn to separate waste at the source for proper treatment and disposal</p>
+        </div>
+    </header>
+
+    <!-- Waste Categories Overview -->
+    <section class="categories-overview">
+        <div class="container">
+            <h2>Waste Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card wet-waste" data-category="wet">
+                    <div class="category-icon">🍃</div>
+                    <h3>Wet Waste (Organic)</h3>
+                    <p>Biodegradable kitchen and garden waste</p>
+                    <div class="category-examples">
+                        <span class="example">Kitchen scraps</span>
+                        <span class="example">Garden waste</span>
+                        <span class="example">Food waste</span>
+                    </div>
+                    <div class="disposal-method">
+                        <strong>Disposal:</strong> Composting, biogas
+                    </div>
+                </div>
+
+                <div class="category-card dry-waste" data-category="dry">
+                    <div class="category-icon">♻️</div>
+                    <h3>Dry Waste (Recyclables)</h3>
+                    <p>Materials that can be processed and reused</p>
+                    <div class="category-examples">
+                        <span class="example">Paper & cardboard</span>
+                        <span class="example">Plastic bottles</span>
+                        <span class="example">Metal cans</span>
+                    </div>
+                    <div class="disposal-method">
+                        <strong>Disposal:</strong> Recycling centers
+                    </div>
+                </div>
+
+                <div class="category-card hazardous-waste" data-category="hazardous">
+                    <div class="category-icon">⚠️</div>
+                    <h3>Hazardous Waste</h3>
+                    <p>Dangerous materials requiring special handling</p>
+                    <div class="category-examples">
+                        <span class="example">Batteries</span>
+                        <span class="example">Medicines</span>
+                        <span class="example">Chemicals</span>
+                    </div>
+                    <div class="disposal-method">
+                        <strong>Disposal:</strong> Special facilities
+                    </div>
+                </div>
+
+                <div class="category-card e-waste" data-category="e-waste">
+                    <div class="category-icon">🔌</div>
+                    <h3>E-Waste</h3>
+                    <p>Electronic devices and components</p>
+                    <div class="category-examples">
+                        <span class="example">Old phones</span>
+                        <span class="example">Computers</span>
+                        <span class="example">Appliances</span>
+                    </div>
+                    <div class="disposal-method">
+                        <strong>Disposal:</strong> E-waste centers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Segregation Guide -->
+    <section class="segregation-guide">
+        <div class="container">
+            <h2>Interactive Segregation Guide</h2>
+            <div class="guide-container">
+                <div class="waste-items">
+                    <h3>Sort These Items</h3>
+                    <div class="waste-item" draggable="true" data-category="wet">
+                        <img src="https://assets.clevelandclinic.org/transform/ab9f9f61-e7bf-4f62-a247-9fa9fda6902b/banana-Peels-453852303-770x533-1_jpg" alt="Banana peel" />
+                        <span>Banana Peel</span>
+                    </div>
+                    <div class="waste-item" draggable="true" data-category="dry">
+                        <img src="https://bernardlab.com/wp-content/uploads/2021/01/plastic-bottles.png" alt="Plastic bottle" />
+                        <span>Plastic Bottle</span>
+                    </div>
+                    <div class="waste-item" draggable="true" data-category="dry">
+                        <img src="https://static.vecteezy.com/system/resources/previews/011/643/706/non_2x/business-newspaper-isolated-on-white-background-daily-newspaper-mock-up-concept-photo.jpg" alt="Newspaper" />
+                        <span>Newspaper</span>
+                    </div>
+                    <div class="waste-item" draggable="true" data-category="hazardous">
+                        <img src="https://www.bruker.com/en/applications/academia-materials-science/battery-research/_jcr_content/root/herostage/backgroundImageVPL.coreimg.82.1920.jpeg/1733859769064/alkaline-battery-aaa-size-with-selective-focus-on-single-battery-shutterstock-368817134.jpeg" alt="Battery" />
+                        <span>Battery</span>
+                    </div>
+                    <div class="waste-item" draggable="true" data-category="wet">
+                        <img src="https://media.istockphoto.com/id/171279361/photo/black-tea.jpg?s=612x612&w=0&k=20&c=IjsIYwZZogSm79Nw9l_Mo4bppEH1FlbKtWgVG4Y87BU=" alt="Tea leaves" />
+                        <span>Tea Leaves</span>
+                    </div>
+                    <div class="waste-item" draggable="true" data-category="e-waste">
+                        <img src="https://www.moneydigest.com/img/gallery/this-old-phone-is-worth-a-ton-of-money-and-its-a-very-popular-brand/intro-1741813739.jpg" alt="Old phone" />
+                        <span>Old Phone</span>
+                    </div>
+                </div>
+
+                <div class="drop-zones">
+                    <div class="drop-zone wet-zone" data-category="wet">
+                        <div class="zone-icon">🍃</div>
+                        <h4>Wet Waste</h4>
+                        <div class="zone-items"></div>
+                    </div>
+                    <div class="drop-zone dry-zone" data-category="dry">
+                        <div class="zone-icon">♻️</div>
+                        <h4>Dry Waste</h4>
+                        <div class="zone-items"></div>
+                    </div>
+                    <div class="drop-zone hazardous-zone" data-category="hazardous">
+                        <div class="zone-icon">⚠️</div>
+                        <h4>Hazardous</h4>
+                        <div class="zone-items"></div>
+                    </div>
+                    <div class="drop-zone e-waste-zone" data-category="e-waste">
+                        <div class="zone-icon">🔌</div>
+                        <h4>E-Waste</h4>
+                        <div class="zone-items"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segregation Tips -->
+   
+
+    <!-- Collection Schedule -->
+   
+
+    <!-- Impact Calculator -->
+    <section class="impact-calculator">
+        <div class="container">
+            <h2>📊 Your Segregation Impact</h2>
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="wet-waste">Wet Waste (kg/week)</label>
+                        <input type="number" id="wet-waste" min="0" value="5" />
+                    </div>
+                    <div class="input-group">
+                        <label for="dry-waste">Dry Waste (kg/week)</label>
+                        <input type="number" id="dry-waste" min="0" value="3" />
+                    </div>
+                    <div class="input-group">
+                        <label for="hazardous-waste">Hazardous Items (count/week)</label>
+                        <input type="number" id="hazardous-waste" min="0" value="2" />
+                    </div>
+                    <button class="btn btn-primary" id="calculate-impact">Calculate Impact</button>
+                </div>
+                <div class="calculator-results">
+                    <div class="result-card">
+                        <div class="result-icon">🌱</div>
+                        <h4>CO2 Saved</h4>
+                        <div class="result-value" id="co2-saved">0 kg</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">💧</div>
+                        <h4>Water Saved</h4>
+                        <div class="result-value" id="water-saved">0 L</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">⚡</div>
+                        <h4>Energy Saved</h4>
+                        <div class="result-value" id="energy-saved">0 kWh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="segregation-cta">
+        <div class="container">
+            <h2>Start Segregating Today!</h2>
+            <p>Join thousands of households making a difference through proper waste segregation</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Download Guide PDF</button>
+                <button class="btn btn-ghost">Join Community</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="waste-segregation.js"></script>
+</body>
+</html>
+
+

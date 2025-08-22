@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recycling Challenges - Clean & Green Tech</title>
+    <meta name="description" content="Gamified recycling challenges with points, badges, and eco-tasks to motivate sustainable living">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recycling-challenges.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="challenge-header">
+        <div class="container">
+            <h1>🌱 Recycling Challenges</h1>
+            <p>Complete eco-missions, earn points, and climb the leaderboard!</p>
+        </div>
+    </header>
+
+    <!-- Progress Overview -->
+    <section class="progress-overview">
+        <div class="container">
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <div class="progress-icon">🏆</div>
+                    <h3>Current Level</h3>
+                    <div class="level-display">
+                        <span class="level-number">7</span>
+                        <span class="level-label">Eco Warrior</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--progress: 75%"></div>
+                    </div>
+                    <p>750 / 1000 points to next level</p>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-icon">⭐</div>
+                    <h3>Total Points</h3>
+                    <div class="points-display">
+                        <span class="points-number">2,450</span>
+                        <span class="points-label">points earned</span>
+                    </div>
+                    <div class="streak-info">
+                        <span class="streak-days">12</span> day streak!
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-icon">🎯</div>
+                    <h3>Weekly Goal</h3>
+                    <div class="goal-display">
+                        <span class="goal-percentage">85%</span>
+                        <span class="goal-label">completed</span>
+                    </div>
+                    <div class="goal-progress">
+                        <div class="goal-bar">
+                            <div class="goal-fill" style="--goal: 85%"></div>
+                        </div>
+                    </div>
+                    <p>17/20 challenges completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Challenges -->
+    <section class="active-challenges">
+        <div class="container">
+            <h2>This Week's Challenges</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-category="plastic">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">🥤</div>
+                        <div class="challenge-info">
+                            <h3>Plastic Sorting Master</h3>
+                            <span class="challenge-points">+25 points</span>
+                        </div>
+                        <div class="challenge-status completed">✓</div>
+                    </div>
+                    <p>Sort 20 plastic items by type (PET, HDPE, PP)</p>
+                    <div class="challenge-progress">
+                        <div class="progress-track">
+                            <div class="progress-fill" style="--fill: 100%"></div>
+                        </div>
+                        <span class="progress-text">20/20 completed</span>
+                    </div>
+                    <div class="challenge-rewards">
+                        <span class="badge">🏅</span>
+                        <span class="badge">💎</span>
+                        <span class="badge">🌟</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card" data-category="paper">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">📰</div>
+                        <div class="challenge-info">
+                            <h3>Paper Collection</h3>
+                            <span class="challenge-points">+20 points</span>
+                        </div>
+                        <div class="challenge-status in-progress">⋯</div>
+                    </div>
+                    <p>Collect and bundle 15kg of paper/cardboard</p>
+                    <div class="challenge-progress">
+                        <div class="progress-track">
+                            <div class="progress-fill" style="--fill: 60%"></div>
+                        </div>
+                        <span class="progress-text">9kg/15kg collected</span>
+                    </div>
+                    <div class="challenge-rewards">
+                        <span class="badge">📚</span>
+                        <span class="badge">🌿</span>
+                    </div>
+                </div>
+
+              
+
+                <div class="challenge-card" data-category="community">
+                    <div class="challenge-header">
+                        <div class="challenge-icon">🤝</div>
+                        <div class="challenge-info">
+                            <h3>Community Builder</h3>
+                            <span class="challenge-points">+15 points</span>
+                        </div>
+                        <div class="challenge-status in-progress">⋯</div>
+                    </div>
+                    <p>Invite 3 friends to join recycling challenges</p>
+                    <div class="challenge-progress">
+                        <div class="progress-track">
+                            <div class="progress-fill" style="--fill: 33%"></div>
+                        </div>
+                        <span class="progress-text">1/3 friends invited</span>
+                    </div>
+                    <div class="challenge-rewards">
+                        <span class="badge">👥</span>
+                        <span class="badge">💚</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges & Achievements -->
+    <section class="badges-section">
+        <div class="container">
+            <h2>Your Achievements</h2>
+            <div class="badges-grid">
+                <div class="badge-item unlocked">
+                    <div class="badge-icon">🥇</div>
+                    <h4>First Steps</h4>
+                    <p>Complete your first challenge</p>
+                    <span class="unlock-date">Unlocked 2 weeks ago</span>
+                </div>
+                
+                <div class="badge-item unlocked">
+                    <div class="badge-icon">🔥</div>
+                    <h4>Streak Master</h4>
+                    <p>Maintain 7-day challenge streak</p>
+                    <span class="unlock-date">Unlocked 1 week ago</span>
+                </div>
+                
+                <div class="badge-item unlocked">
+                    <div class="badge-icon">♻️</div>
+                    <h4>Recycling Pro</h4>
+                    <p>Recycle 100 items total</p>
+                    <span class="unlock-date">Unlocked 3 days ago</span>
+                </div>
+                
+                <div class="badge-item locked">
+                    <div class="badge-icon">🌍</div>
+                    <h4>Eco Legend</h4>
+                    <p>Reach level 10</p>
+                    <span class="unlock-date">3 levels to go</span>
+                </div>
+                
+                <div class="badge-item locked">
+                    <div class="badge-icon">🏆</div>
+                    <h4>Challenge Champion</h4>
+                    <p>Complete 50 challenges</p>
+                    <span class="unlock-date">23 challenges to go</span>
+                </div>
+                
+                <div class="badge-item locked">
+                    <div class="badge-icon">💎</div>
+                    <h4>Diamond Recycler</h4>
+                    <p>Earn 5000 total points</p>
+                    <span class="unlock-date">2550 points to go</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section class="leaderboard-section">
+        <div class="container">
+            <h2>Community Leaderboard</h2>
+            <div class="leaderboard">
+                <div class="leaderboard-item top-1">
+                    <div class="rank">1</div>
+                    <div class="user-info">
+                        <div class="avatar">🌱</div>
+                        <div class="user-details">
+                            <h4>EcoSarah</h4>
+                            <span class="user-level">Level 12 - Eco Master</span>
+                        </div>
+                    </div>
+                    <div class="user-stats">
+                        <span class="points">8,450 pts</span>
+                        <span class="challenges">67 completed</span>
+                    </div>
+                </div>
+                
+                <div class="leaderboard-item top-2">
+                    <div class="rank">2</div>
+                    <div class="user-info">
+                        <div class="avatar">🌿</div>
+                        <div class="user-details">
+                            <h4>GreenMike</h4>
+                            <span class="user-level">Level 11 - Eco Warrior</span>
+                        </div>
+                    </div>
+                    <div class="user-stats">
+                        <span class="points">7,890 pts</span>
+                        <span class="challenges">59 completed</span>
+                    </div>
+                </div>
+                
+                <div class="leaderboard-item top-3">
+                    <div class="rank">3</div>
+                    <div class="user-info">
+                        <div class="avatar">🍃</div>
+                        <div class="user-details">
+                            <h4>RecycleRita</h4>
+                            <span class="user-level">Level 10 - Eco Explorer</span>
+                        </div>
+                    </div>
+                    <div class="user-stats">
+                        <span class="points">7,120 pts</span>
+                        <span class="challenges">54 completed</span>
+                    </div>
+                </div>
+                
+                <div class="leaderboard-item">
+                    <div class="rank">4</div>
+                    <div class="user-info">
+                        <div class="avatar">🌱</div>
+                        <div class="user-details">
+                            <h4>You</h4>
+                            <span class="user-level">Level 7 - Eco Warrior</span>
+                        </div>
+                    </div>
+                    <div class="user-stats">
+                        <span class="points">2,450 pts</span>
+                        <span class="challenges">23 completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Tips -->
+    <section class="tips-section">
+        <div class="container">
+            <h2>💡 Daily Recycling Tip</h2>
+            <div class="tip-card">
+                <div class="tip-image">
+                    <img src="https://just-zero.org/wp-content/uploads/2024/02/shutterstock_1938132865.jpg" alt="Plastic bottles being sorted" />
+                </div>
+                <div class="tip-content">
+                    <h3>Know Your Plastics!</h3>
+                    <p>Check the bottom of plastic containers for the recycling number. Numbers 1 (PET) and 2 (HDPE) are widely accepted, while 3-7 may have limited recycling options in your area.</p>
+                    <div class="tip-actions">
+                        <button class="btn btn-primary">Mark as Read</button>
+                        <button class="btn btn-ghost">Share Tip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="recycling-challenges.js"></script>
+</body>
+</html>
+
+
